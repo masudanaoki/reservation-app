@@ -1,34 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">reservation-app</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" [routerLink]="['/']">ホーム</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link active" href="#">新規作成</a>
             </li>
           </ul>
         </div>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
     </div>
 </nav>
-<div class="d-flex p-2 bd-highlight bg-primary mb-3">デフォルトのFlexコンテナ</div>
-<div class="d-inline-flex p-2 bg-primary mb-3">インラインのFlexコンテナ</div>
-<div class="d-flex flex-row bg-primary mb-3">
-  <div class="p-2 bd-highlight">Flexアイテム1</div>
-  <div class="p-2 bd-highlight">Flexアイテム2</div>
-  <div class="p-2 bd-highlight">Flexアイテム3</div>
-</div>
-<div class="d-flex flex-row-reverse bg-primary">
-  <div class="p-2 bd-highlight">Flexアイテム1</div>
-  <div class="p-2 bd-highlight">Flexアイテム2</div>
-  <div class="p-2 bd-highlight">Flexアイテム3</div>
-</div>
