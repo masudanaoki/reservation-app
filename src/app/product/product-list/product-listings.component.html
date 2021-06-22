@@ -1,14 +1,16 @@
-<div class="container mt-3">
-  <div class="row">
-    <div class="col" *ngFor="let product of products; let productId = index">
-      <a [routerLink]="[productId]">
-        <div class="card">
-          <img src="{{product.coverImage}}" class="card-img-top" alt="...">
-          <div class="card-body">
-              <p class="card-text">{{product.heading}}</p>
+<div *ngIf="products">
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col" *ngFor="let product of products; let productId = index">
+        <a [routerLink]="[ product._id ]">
+          <div class="card">
+            <img src="{{product.coverImage}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">{{product.heading}}</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 </div>
